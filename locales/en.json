@@ -1,0 +1,31 @@
+{
+  "common": {
+    "title": "Fpvelix",
+    "motto": "Elevate Your Perspective.",
+    "email": "info@fpvelix.de",
+    "phone": "+49 0461 858 465"
+  },
+  "home": {
+    "hero-title": "Drone Videography in Allgäu",
+    "h-1": "Cinematic Drone Footage That Elevates Your Story",
+    "p-1": "I capture stunning aerial footage that transforms ordinary views into extraordinary perspectives.",
+    "latest-projects": "My latest projects",
+    "button-view-projects": "View all projects",
+    "h-2": "Who is fpvelix?",
+    "p-2_1": "Driven by a passion for visual storytelling, I aim to transform ordinary perspectives into extraordinary experiences. I believe that every frame has the potential to evoke emotion, tell a story, and inspire action. My work is guided by a commitment to innovation, pushing creative boundaries while maintaining a keen attention to detail.",
+    "quote": "I’m Felix, capturing stunning aerial shots with precision, creativity, and style.",
+    "p-2_2": "My ambition is to redefine the way people see the world from above, blending artistry with technical expertise. I strive to collaborate with clients who value bold ideas and unique perspectives, constantly seeking projects that challenge me and expand my vision. Ultimately, my goal is to create imagery that resonates, leaving a lasting impression long after the shot is taken.",
+    "h-3": "Services",
+    "service-h-1": "Airspace Permits & Legal Coverage",
+    "service-p-1": "We handle all drone permits and regulations, ensuring safe and legal flights.",
+    "service-h-2": "4K Aerial Shots with GoPro",
+    "service-p-2": "Capture breathtaking aerial footage in stunning 4K quality for cinematic impact.",
+    "service-h-3": "Post-Production & Video Editing",
+    "service-p-3": "Professional editing to turn raw drone footage into polished visual stories.",
+    "service-h-4": "Custom Drone Components",
+    "service-p-4": "Tailor-made drone setups designed to deliver the perfect shot every time."
+  },
+  "drones": {
+    "test": "Test for drone page in english"
+  }
+}

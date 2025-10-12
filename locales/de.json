@@ -1,0 +1,31 @@
+{
+  "common": {
+    "title": "Fpvelix",
+    "motto": "Erheben Sie Ihre Perspektive.",
+    "email": "info@fpvelix.de",
+    "phone": "+49 0461 858 465"
+  },
+  "home": {
+    "hero-title": "Drohnen-Videografie im Allgäu",
+    "h-1": "Kinematografische Drohnenaufnahmen, die Ihre Geschichte erheben",
+    "p-1": "Ich halte atemberaubende Luftaufnahmen fest, die gewöhnliche Ansichten in außergewöhnliche Perspektiven verwandeln.",
+    "latest-projects": "Meine neuesten Projekte",
+    "button-view-projects": "Alle Projekte ansehen",
+    "h-2": "Wer ist fpvelix?",
+    "p-2_1": "Getrieben von einer Leidenschaft für visuelles Storytelling, möchte ich gewöhnliche Perspektiven in außergewöhnliche Erlebnisse verwandeln. Ich glaube, dass jeder Rahmen das Potenzial hat, Emotionen zu wecken, eine Geschichte zu erzählen und zum Handeln zu inspirieren. Meine Arbeit wird von einem Streben nach Innovation geleitet, indem ich kreative Grenzen verschiebe und gleichzeitig ein scharfes Auge für Details behalte.",
+    "quote": "Ich bin Felix und halte atemberaubende Luftaufnahmen mit Präzision, Kreativität und Stil fest.",
+    "p-2_2": "Mein Ziel ist es, die Art und Weise, wie Menschen die Welt von oben sehen, neu zu definieren, indem ich Kunstfertigkeit mit technischer Expertise verbinde. Ich strebe danach, mit Kunden zusammenzuarbeiten, die mutige Ideen und einzigartige Perspektiven schätzen, und suche ständig nach Projekten, die mich herausfordern und meine Vision erweitern. Letztendlich möchte ich Bilder schaffen, die nachhallen und einen bleibenden Eindruck hinterlassen, lange nachdem die Aufnahme gemacht wurde.",
+    "h-3": "Dienstleistungen",
+    "service-h-1": "Luftraum-Genehmigungen & Rechtliche Absicherung",
+    "service-p-1": "Wir kümmern uns um alle Drohnengenehmigungen und Vorschriften, um sichere und legale Flüge zu gewährleisten.",
+    "service-h-2": "4K-Luftaufnahmen mit GoPro",
+    "service-p-2": "Halten Sie atemberaubende Luftaufnahmen in atemberaubender 4K-Qualität für einen kinematografischen Effekt fest.",
+    "service-h-3": "Postproduktion & Videoschnitt",
+    "service-p-3": "Professioneller Schnitt, um Rohmaterial von Drohnenaufnahmen in polierte visuelle Geschichten zu verwandeln.",
+    "service-h-4": "Individuelle Drohnenkomponenten",
+    "service-p-4": "Maßgeschneiderte Drohnen-Setups, die jedes Mal die perfekte Aufnahme liefern."
+  },
+  "drones": {
+    "test": "Test fur drone page auf deutsch"
+  }
+}
