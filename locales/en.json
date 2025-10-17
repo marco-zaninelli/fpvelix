@@ -3,7 +3,8 @@
     "title": "Fpvelix",
     "motto": "Elevate Your Perspective.",
     "email": "info@fpvelix.de",
-    "phone": "+49 0461 858 465"
+    "phone": "+49 0461 858 465",
+    "copyright": "©2025 all rights reserved / Built by"
   },
   "home": {
     "hero-title": "Drone Videography in Allgäu",
@@ -12,9 +13,9 @@
     "latest-projects": "My latest projects",
     "button-view-projects": "View all projects",
     "h-2": "Who is fpvelix?",
-    "p-2_1": "Driven by a passion for visual storytelling, I aim to transform ordinary perspectives into extraordinary experiences. I believe that every frame has the potential to evoke emotion, tell a story, and inspire action. My work is guided by a commitment to innovation, pushing creative boundaries while maintaining a keen attention to detail.",
+    "p-2_1": "Driven by a passion for visual storytelling, I transform ordinary perspectives into extraordinary experiences. Every frame is an opportunity to evoke emotion, tell a story, and inspire action, guided by creativity and attention to detail.",
     "quote": "I’m Felix, capturing stunning aerial shots with precision, creativity, and style.",
-    "p-2_2": "My ambition is to redefine the way people see the world from above, blending artistry with technical expertise. I strive to collaborate with clients who value bold ideas and unique perspectives, constantly seeking projects that challenge me and expand my vision. Ultimately, my goal is to create imagery that resonates, leaving a lasting impression long after the shot is taken.",
+    "p-2_2": "I aim to redefine how people see the world from above, blending artistry with technical expertise. I seek projects that challenge me, working with clients who value bold ideas and unique perspectives to create imagery that leaves a lasting impression.",
     "h-3": "Services",
     "service-h-1": "Airspace Permits & Legal Coverage",
     "service-p-1": "We handle all drone permits and regulations, ensuring safe and legal flights.",

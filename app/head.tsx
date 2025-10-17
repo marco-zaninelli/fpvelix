@@ -17,7 +17,11 @@ export default function Head() {
             <meta name="theme-color" content="#0D0D0D" />
             <meta name="description" content="Professionelle Drohnenvideos und Luftaufnahmen – atemberaubende Perspektiven und kreative Drohnenfotografie aus der Vogelperspektive." />
 
-
+            {/* Vimeo Preconnects */}
+            <link rel="preconnect" href="https://player.vimeo.com" />
+            <link rel="preconnect" href="https://i.vimeocdn.com" />
+            <link rel="dns-prefetch" href="https://player.vimeo.com" />
+            <link rel="dns-prefetch" href="https://i.vimeocdn.com" />
         </>
     );
 }
