@@ -1,3 +1,5 @@
+'use client';
+
 import {useTranslations} from 'next-intl';
 import VimeoVideo from "@/components/VimeoVideo";
 import Image from "next/image";
@@ -24,7 +26,7 @@ export default function HomePage() {
             </section>
 
             <section id={'description'}
-                     className={'flex flex-row gap-20 items-center justify-center max-w-7xl mx-auto mb-40'}>
+                     className={'flex flex-row gap-20 items-center justify-center max-w-7xl mx-auto mb-40 px-6'}>
                 <div className={"w-2/3"}>
                     <h2>{t('h-1')}</h2>
                     <p>{t('p-1')}</p>
@@ -33,7 +35,7 @@ export default function HomePage() {
                        className={"w-1/3 aspect-[3/4] object-cover"}/>
             </section>
 
-            <section id={'projects'} className={'mb-40 max-w-7xl mx-auto'}>
+            <section id={'projects'} className={'mb-40 max-w-7xl mx-auto px-6'}>
                 <h2>{t('latest-projects')}</h2>
                 <div className={"grid grid-cols-3 gap-10 my-6"}>
                     <Image src={projOne} alt={""/* TODO:: add alt text */}
@@ -47,7 +49,7 @@ export default function HomePage() {
             </section>
 
             <section id={'about'}
-                     className={"flex flex-row gap-20 items-center justify-center max-w-7xl mx-auto mb-40"}>
+                     className={"flex flex-row gap-20 items-center justify-center max-w-7xl mx-auto mb-40 px-6"}>
                 <div className={"w-2/3"}>
                     <h2 className={"mb-6"}>{t("h-2")}</h2>
                     <p>{t("p-2_1")}</p>
@@ -59,7 +61,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section id={'services'} className={'mb-40 max-w-7xl mx-auto'}>
+            <section id={'services'} className={'mb-40 max-w-7xl mx-auto px-6'}>
                 <h2>{t('h-3')}</h2>
                 <Image src={services} alt={""/* TODO:: add alt text */} className={'my-6'}/>
                 <div className="grid grid-cols-2 gap-10">

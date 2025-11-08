@@ -30,7 +30,7 @@ export default function VimeoVideo({
     const iframeRef = useRef<HTMLIFrameElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    // Parse aspect ratio
+    // Parse aspect ratio for padding calculation
     const [width, height] = aspectRatio.split('/').map(Number);
     const paddingBottom = `${(height / width) * 100}%`;
 
@@ -43,18 +43,22 @@ export default function VimeoVideo({
             muted,
             loop,
             background,
-            controls: false, // Always false for SDK, we handle controls via URL
+            controls: false,
             transparent: true,
         });
 
-        player.on('play', () => setIsPlaying(true));
+        // Use the 'play' event as trigger for smooth transition
+        player.on('play', () => {
+            setIsPlaying(true);
+        });
 
         return () => {
+            // Clean up the Vimeo player instance when the component unmounts
             player.unload();
         };
     }, [id, autoplay, muted, loop, background]);
 
-    // Construct iframe URL with all optional params
+    // Construct iframe URL
     const vimeoUrl = `https://player.vimeo.com/video/${id}?` +
         `autoplay=${autoplay ? 1 : 0}` +
         `&loop=${loop ? 1 : 0}` +
@@ -65,22 +69,30 @@ export default function VimeoVideo({
 
     return (
         <div className="relative w-full overflow-hidden" style={{ paddingBottom }}>
-            {!isPlaying && (
-                <Image
-                    src={`https://vumbnail.com/${id}_large.jpg`}
-                    alt={alt}
-                    fill
-                    className="absolute inset-0 w-full h-full object-cover z-10"
-                    priority
-                />
-            )}
+            
+            {/* Image Placeholder */}
+            <Image
+                src={`https://vumbnail.com/${id}_large.jpg`}
+                alt={alt}
+                fill
+                className="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700 blur-xs"
+                priority
+                style={{
+                    opacity: isPlaying ? 0 : 1
+                }}
+            />
+
+            {/* Vimeo Player */}
             <iframe
                 ref={iframeRef}
                 src={vimeoUrl}
-                className="absolute inset-0 w-full h-full pointer-events-none"
-                allow="autoplay; fullscreen"
                 title={alt}
-                style={{ border: 'none' }}
+                allow="autoplay; fullscreen"
+                className="absolute inset-0 w-full h-full pointer-events-none z-20 transition-opacity duration-700"
+                style={{
+                    border: 'none',
+                    opacity: isPlaying ? 1 : 0
+                }}
             />
         </div>
     );

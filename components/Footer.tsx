@@ -5,7 +5,7 @@ export default function Footer() {
     const t = useTranslations('common');
 
     return (
-        <footer className={'mx-40 my-10'}>
+        <footer className={'max-w-[1480px] mx-auto my-10 px-6'} id={"footer"}>
             <div className={'flex flex-row justify-between items-start'}>
                 <div className={'flex flex-col justify-between'}>
                     <div>
