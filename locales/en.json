@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "projects": "projects",
+    "drones": "drones",
+    "contact": "get in touch"
+  },
   "common": {
     "title": "Fpvelix",
     "motto": "Elevate Your Perspective.",

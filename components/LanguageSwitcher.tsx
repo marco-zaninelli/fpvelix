@@ -22,9 +22,7 @@ export default function LanguageSwitcher({className = ''}: { className?: string 
             onClick={() => handleLanguageChange(otherLocale)}
             className={`cursor-pointer text-bold lowercase ${className}`}
         >
-            <p>
-                {otherLocale.toUpperCase()}
-            </p>
+            {otherLocale.toUpperCase()}
         </button>
     );
 }

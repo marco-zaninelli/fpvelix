@@ -5,18 +5,20 @@ import Logo from "@/public/img/fpvelix_logo.svg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import {Link} from "@/i18n/navigation";
 import {useState, useEffect} from "react";
+import { useTranslations } from 'next-intl';
 
 import BurgerIcon from "@/public/icons/burger-icon.svg";
 import CloseIcon from "@/public/icons/close-icon.svg"
 
 const PagesLinks = [
-    {label: "projects", href: "/projects",},
-    {label: "drones", href: "/drones",},
-    {label: "get in touch", href: "/#footer",}
+    { key: "projects", href: "/projects",},
+    { key: "drones", href: "/drones",},
+    { key: "contact", href: "/#footer",}
 ];
 
 
 export default function Header({lang = 'de'}) {
+    const t = useTranslations('nav');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -53,11 +55,11 @@ export default function Header({lang = 'de'}) {
                     <nav>
                         <ul className="flex items-center lowercase">
                             {PagesLinks.map((item, index) => (
-                                <li key={item.label} className="flex items-center">
+                                <li key={item.key} className="flex items-center">
                                     <Link
                                         href={item.href}
                                     >
-                                        {item.label}
+                                        {t(item.key)}
                                     </Link>
                                     {index < PagesLinks.length && (
                                         <span className="mx-8">/</span>
@@ -90,16 +92,16 @@ export default function Header({lang = 'de'}) {
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}
             >
-                <div className="flex flex-col h-full p-10 pt-32"> {/* Added padding-top */}
+                <div className="flex flex-col h-full p-10 pt-32 text-3xl font-bold text-white">
                     <nav>
-                        <ul className="flex flex-col items-center space-y-8 lowercase text-3xl font-bold">
+                        <ul className="flex flex-col items-center space-y-8 lowercase">
                             {PagesLinks.map((item) => (
-                                <li key={item.label}>
+                                <li key={item.key}>
                                     <Link
                                         href={item.href}
                                         onClick={closeMenu}
                                     >
-                                        {item.label}
+                                        {item.key}
                                     </Link>
                                 </li>
                             ))}
