@@ -1,39 +1,45 @@
 @import "tailwindcss";
 
+@theme {
+    --color-primary: #C3C3C3;
+    --color-secondary: #8f8f8f;
+    --color-accent: #ff0000;
+    --color-background: #000000;
+    --color-foreground: #ededed;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-secondary m-0 p-0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-primary tracking-wider;
+    }
+
+    h1 {
+        @apply text-5xl font-bold;
+    }
+
+    h2 {
+        @apply text-4xl font-bold;
+    }
+
+    h3 {
+        @apply text-2xl font-bold;
+    }
+
+    p {
+        @apply text-xl leading-relaxed max-w-prose;
+    }
+
+    @media (max-width: 600px) {
+        p {
+            @apply max-w-full;
+        }
+    }
+}
+
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background: #0a0a0a;
-    color: #ededed;
-    font-family: 'Jura', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    letter-spacing: 0.025em;
-}
-
-h1, h2 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-}
-
-p{
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #C3C3C3;
-    max-width: 65ch;
-}
-@media (max-width: 600px) {
-    p {
-        max-width: 100%;
-    }
 }

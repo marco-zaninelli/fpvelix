@@ -37,50 +37,54 @@ export default function Header({lang = 'de'}) {
 
     return (
         <>
-            <header className="flex items-center justify-between my-8 mx-10">
-                {/* Logo */}
-                <Link href={"/"}>
-                    <div className="w-40 z-50">
-                        <Image
-                            src={Logo}
-                            alt="Fpvelix logo"
-                            className="h-auto w-full"
-                            priority
-                        />
+            <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-white/10">
+                <div className={"flex items-center justify-between my-8 mx-10"}>
+
+                    {/* Logo */}
+                    <Link href={"/"}>
+                        <div className="w-40 z-50">
+                            <Image
+                                src={Logo}
+                                alt="Fpvelix logo"
+                                className="h-auto w-full"
+                                priority
+                            />
+                        </div>
+                    </Link>
+
+                    {/* Desktop */}
+                    <div className="hidden md:flex items-center text-lg tracking-wide font-bold">
+                        <nav>
+                            <ul className="flex items-center lowercase">
+                                {PagesLinks.map((item, index) => (
+                                    <li key={item.key} className="flex items-center">
+                                        <Link
+                                            href={item.href}
+                                        >
+                                            {t(item.key)}
+                                        </Link>
+                                        {index < PagesLinks.length && (
+                                            <span className="mx-8">/</span>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                        <LanguageSwitcher/>
                     </div>
-                </Link>
 
-                {/* Desktop */}
-                <div className="hidden md:flex items-center text-lg tracking-wide font-bold">
-                    <nav>
-                        <ul className="flex items-center lowercase">
-                            {PagesLinks.map((item, index) => (
-                                <li key={item.key} className="flex items-center">
-                                    <Link
-                                        href={item.href}
-                                    >
-                                        {t(item.key)}
-                                    </Link>
-                                    {index < PagesLinks.length && (
-                                        <span className="mx-8">/</span>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                    <LanguageSwitcher/>
+                    {/* Mobile */}
+                    <div className="flex md:hidden items-center z-50">
+                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Open menu">
+                            {isMenuOpen ? (
+                                <Image src={CloseIcon} alt="Close menu" className="w-8 h-8 text-white" priority/>
+                            ) : (
+                                <Image src={BurgerIcon} alt="Open menu" className="w-8 h-8 text-white" priority/>
+                            )}
+                        </button>
+                    </div>
                 </div>
 
-                {/* Mobile */}
-                <div className="flex md:hidden items-center z-50">
-                    <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Open menu">
-                        {isMenuOpen ? (
-                            <Image src={CloseIcon} alt="Close menu" className="w-8 h-8 text-white" priority/>
-                        ) : (
-                            <Image src={BurgerIcon} alt="Open menu" className="w-8 h-8 text-white" priority/>
-                        )}
-                    </button>
-                </div>
 
             </header>
 
