@@ -5,42 +5,32 @@ export default function Footer() {
     const t = useTranslations('common');
 
     return (
-        <footer className={'max-w-[1480px] mx-auto my-10 px-6'} id={"footer"}>
-            <div className={'flex flex-row justify-between items-start'}>
-                <div className={'flex flex-col justify-between'}>
+        <footer className="border-t border-white/10 py-12 px-6">
+            <div className="container mx-auto max-w-7xl">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                     <div>
-                        <h1 className={"uppercase"}>{t("title")}</h1>
-                        <p className={'font-bold'}>{t('motto')}</p>
+                        <h2 className="=mb-2">FPVELIX</h2>
+                        <p>Elevate Your Perspective</p>
+                    </div>
+                    <div className="flex flex-col items-start md:items-end gap-2">
+                        <a href="mailto:info@fpvelix.de" className="text-xl hover:text-white/80 transition-colors">
+                            info@fpvelix.de
+                        </a>
+                        <a href="tel:+4904618584665" className="text-xl hover:text-white/80 transition-colors">
+                            (+49) 0461 858 465
+                        </a>
                     </div>
                 </div>
-                <div className={'flex flex-col mt-10'}>
-                    <div className={'text-3xl flex flex-col items-end gap-6'}>
-                        <a href={`mailto:${t('email')}`} className={'w-fit'}>{t('email')}</a>
-                        <a href={`tel:${t('phone')}`} className={'w-fit'}>{t('phone')}</a>
+                <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                    <p className={"text-sm"}>©2025 all rights reserved / Built by Marco Zanninelli</p>
+                    <div className="flex gap-4">
+                        <Link href="/impressum" className="hover:text-white/60 transition-colors">
+                            Impressum
+                        </Link>
+                        <Link href="/cookie-and-privacy" className="hover:text-white/60 transition-colors">
+                            Privacy Policy & Cookie Policy
+                        </Link>
                     </div>
-                </div>
-            </div>
-
-            {/* Legal */}
-            <div className={'flex flex-row justify-between mt-20'}>
-                <div className={'text-md'}>
-                    {t('copyright')}{' '}
-                    <a
-                        href="https://marco.zaninelli.me"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={'underline'}
-                    >
-                        Marco Zaninelli
-                    </a>
-                </div>
-
-                <div className={'text-md'}>
-                    <Link href={"/impressum"}>Impressum</Link>
-                    <span className="mx-8">/</span>
-                    <Link href={"/privacy"}>Privacy Policy</Link>
-                    <span className="mx-4">/</span>
-                    <Link href={"/cookie"}>Cookie Policy</Link>
                 </div>
             </div>
         </footer>

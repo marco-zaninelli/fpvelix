@@ -1,9 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState, useMemo } from 'react';
-import Image from 'next/image';
 import Player from '@vimeo/player';
-import { Play } from 'lucide-react';
+import { Play, Loader2 } from 'lucide-react';
 
 /**
  * Maps the specified aspect ratio strings (2.39/1, 9/16, 16/9)
@@ -78,8 +77,27 @@ export default function VimeoEmbedPlayer({
             // Ensure performance by only loading player once
         });
 
-        player.on('loaded', () => {
+        player.on('loaded', async () => {
             setIsPlayerReady(true);
+
+            // --- START: Quality Adjustment ---
+            try {
+                // Get available quality levels (e.g., 240p, 360p, 720p, 1080p)
+                const availableQualities = await player.getQualities();
+
+                // Check if 1080p (or "hls" which often corresponds to adaptive high quality) is available
+                const preferredQuality = availableQualities.find(q =>
+                    q.id === '1080p' || q.id.includes('hls')
+                );
+
+                if (preferredQuality) {
+                    // Set the quality to the highest available (e.g., 1080p)
+                    await player.setQuality(preferredQuality.id);
+                }
+            } catch (error) {
+                console.warn("Could not set Vimeo playback quality:", error);
+            }
+            // --- END: Quality Adjustment ---
         });
 
         // Use the 'play' event as a trigger to smoothly transition from placeholder
@@ -94,15 +112,10 @@ export default function VimeoEmbedPlayer({
         };
     }, [id, autoplay, muted, loop, background, isPlayerReady]);
 
-
-    // Placeholder image URL
-    const placeholderSrc = `https://vumbnail.com/${id}_large.jpg`;
-
     // Style for the container and Iframe, enforcing Tailwind class order
     const containerClasses = `relative w-full overflow-hidden ${aspectRatioClass} ${className}`;
     const iframeClasses = `absolute inset-0 w-full h-full border-none 
                            transition-opacity duration-700 pointer-events-none z-20`;
-    const placeholderClasses = `absolute inset-0 z-10 w-full h-full object-cover transition-opacity duration-700`;
 
     // Only render the Play button if controls are enabled AND it's not a background video
     const showControlsOverlay = controls && !background && !isPlaying;
@@ -110,19 +123,16 @@ export default function VimeoEmbedPlayer({
     return (
         <div className={containerClasses}>
 
-            {/* Image Placeholder with Blur-up Effect */}
-            <Image
-                src={placeholderSrc}
-                alt={alt}
-                fill
-                className={placeholderClasses}
-                priority={!isPlaying} // High priority on initial load
-                style={{
-                    opacity: isPlaying ? 0 : 1,
-                    filter: 'blur(3px)', // Small blur for a smoother transition
-                }}
-                sizes="(max-width: 768px) 100vw, 50vw"
-            />
+            {/* Gray Background and Spinner Loader */}
+            <div
+                className={`absolute inset-0 z-10 flex items-center justify-center 
+                       bg-foreground/20 transition-opacity duration-700`}
+                style={{ opacity: isPlaying ? 0 : 1 }}
+                aria-hidden={isPlaying}
+            >
+                {/* The Circling Loader Icon */}
+                <Loader2 size={48} className="text-white animate-spin" />
+            </div>
 
             {/* Play Button/Overlay (Design System Adherence: Accent Color) */}
             {showControlsOverlay && (

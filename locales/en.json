@@ -6,10 +6,18 @@
   },
   "common": {
     "title": "Fpvelix",
-    "motto": "Elevate Your Perspective.",
+    "motto": "Elevate your perspective",
     "email": "info@fpvelix.de",
-    "phone": "+49 0461 858 465",
-    "copyright": "©2025 all rights reserved / Built by"
+    "phone": "(+49) 0461 858 465",
+    "copyright": "©2025 All rights reserver / Built by ",
+    "name": "Felix Stech",
+    "address":{
+      "street": "Grünbaumgasse 13",
+      "postalCode": "87435",
+      "city": "Kempten",
+      "state": "Allgäu",
+      "country": "Germany"
+    }
   },
   "home": {
     "hero-title": "Drone Videography in Allgäu",
@@ -36,6 +44,60 @@
     "service-p-4": "Tailor-made drone setups designed to deliver the perfect shot every time."
   },
   "drones": {
-    "test": "Test for drone page in english"
+    "title": "My Fleet",
+    "description": "Specialized drones engineered for different filming scenarios. Each optimized for specific use cases and environments.",
+    "drone-1-name": "The Quiet One",
+    "drone-1-description": "Specialized cinewhoop drone for precise, stabilized, and quiet indoor and close-proximity filming.",
+    "drone-1-strengths-1": "Exceptionally stable and quiet flight",
+    "drone-1-strengths-2": "Advanced propeller guards for safety",
+    "drone-1-strengths-3": "Small and light, ideal for tight spaces",
+    "drone-1-strengths-4": "High-quality stabilized 4K camera",
+    "drone-1-use-1": "Indoor real estate tours",
+    "drone-1-use-2": "Restaurant and venue showcases",
+    "drone-1-use-3": "Close-proximity product shots",
+    "drone-1-use-4": "Architectural interiors",
+    "drone-1-feature-1": "Ultra Quiet",
+    "drone-1-feature-2": "Super Stabilized",
+    "drone-1-feature-3": "Propeller Guards",
+    "drone-1-feature-4": "Compact",
+    "drone-2-name": "The Action Freak",
+    "drone-2-description": "A rugged, high-speed freestyle quad engineered for extreme action and immersive, fast-paced chase scenes.",
+    "drone-2-strengths-1": "High-speed and extreme agility",
+    "drone-2-strengths-2": "Rugged, impact-resistant frame",
+    "drone-2-strengths-3": "Wide-angle lens for immersive POVs",
+    "drone-2-strengths-4": "Minimal latency video transmission",
+    "drone-2-use-1": "Freestyle sports filming",
+    "drone-2-use-2": "Chase scenes for extreme vehicle action",
+    "drone-2-use-3": "Competitive racing and dynamic pursuit shots",
+    "drone-2-feature-1": "Extreme Speed",
+    "drone-2-feature-2": "Impact-Resistant",
+    "drone-2-feature-3": "Immersive Footage",
+    "drone-2-feature-4": "High Agility",
+    "drone-3-name": "The Traveller",
+    "drone-3-description": "Long-range platform optimized for maximum flight time and superior range, perfect for scenic and industrial documentation.",
+    "drone-3-strengths-1": "Maximum flight time (up to 45+ minutes)",
+    "drone-3-strengths-2": "Exceptional range and reliable transmission",
+    "drone-3-strengths-3": "High-resolution camera with optical zoom capability",
+    "drone-3-strengths-4": "Advanced GPS for precise waypoint navigation",
+    "drone-3-use-1": "Landscapes and wilderness cinematography",
+    "drone-3-use-2": "Real estate property overviews",
+    "drone-3-use-3": "Nature and wildlife documentation",
+    "drone-3-feature-1": "Battery Life",
+    "drone-3-feature-2": "Superior Range",
+    "drone-3-feature-3": "High-Res Camera",
+    "drone-3-feature-4": "Reliable GPS"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "section-h-1": "Information pursuant to § 5 TMG (German Telemedia Act)",
+    "section-h-2": "Contact",
+    "section-h-3": "Responsible for content pursuant to § 55 para. 2 RStV (German State Treaty for Broadcasting)",
+    "disclaimer-h": "Disclaimer",
+    "disclaimer-h-1": "Liability for Content",
+    "disclaimer-p-1": "As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 para. 1 TMG. Pursuant to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+    "disclaimer-h-2": "Liability for Links",
+    "disclaimer-p-2": "Our site contains links to external third-party websites, the content of which we have no influence over. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
+    "disclaimer-h-3": "Copyright",
+    "disclaimer-p-3": "The content and works created by the site operator on these pages are subject to German copyright law. The duplication, processing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
   }
 }

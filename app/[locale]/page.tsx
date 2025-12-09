@@ -21,7 +21,7 @@ export default function HomePage() {
 
     return (
         <>
-            <section id={'hero'} className={'my-40'}>
+            <section id={'hero'} className={'mb-40 mt-80'}>
                 <h1 className={'px-8 py-4'}>{t('hero-title')}</h1>
                 <div className={"relative"}>
                     <VimeoVideo

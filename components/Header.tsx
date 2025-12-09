@@ -38,7 +38,7 @@ export default function Header({lang = 'de'}) {
     return (
         <>
             <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-white/10">
-                <div className={"flex items-center justify-between my-8 mx-10"}>
+                <div className={"flex items-center justify-between my-6 mx-10"}>
 
                     {/* Logo */}
                     <Link href={"/"}>
