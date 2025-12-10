@@ -1,5 +1,3 @@
-'use client';
-
 import './globals.css';
 import {Jura} from 'next/font/google';
 import React from 'react';
@@ -10,15 +8,11 @@ const jura = Jura({
     display: 'swap',
 });
 
-export default function RootLayout({children, params}: {
+export default function RootLayout({children}: {
     children: React.ReactNode;
-    params?: { lang?: string };
 }) {
-
-    const lang = params?.lang || 'de';
-
     return (
-        <html lang={lang}>
+        <html lang="de">
         <body className={jura.className}>
         <LayoutContent>{children}</LayoutContent>
         </body>

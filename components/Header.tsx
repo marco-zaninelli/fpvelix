@@ -17,7 +17,7 @@ const PagesLinks = [
 ];
 
 
-export default function Header({lang = 'de'}) {
+export default function Header() {
     const t = useTranslations('nav');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

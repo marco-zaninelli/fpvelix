@@ -29,7 +29,7 @@ export default async function LangLayout({ children, params }: Props) {
 
     return (
         <NextIntlClientProvider messages={messages} locale={locale}>
-            <Header lang={locale} />
+            <Header/>
             <main>
                 {children}
             </main>

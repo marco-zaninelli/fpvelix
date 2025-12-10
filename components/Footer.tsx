@@ -1,8 +1,8 @@
-import {useTranslations} from 'next-intl';
+// import {useTranslations} from 'next-intl';
 import {Link} from "@/i18n/navigation";
 
 export default function Footer() {
-    const t = useTranslations('common');
+    // const t = useTranslations('common');
 
     return (
         <footer className="border-t border-white/10 py-12 px-6">
