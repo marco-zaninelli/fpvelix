@@ -14,5 +14,7 @@ const PROJECTS_QUERY = defineQuery(`*[_type == "post"] | order(_createdAt desc)[
 export default async function HomePage() {
     const { data: posts } = await sanityFetch({ query: PROJECTS_QUERY });
 
-    return <HomeClient posts={posts} />;
+    return (
+        <HomeClient posts={posts} />
+    );
 }

@@ -31,7 +31,7 @@ export default function HomeClient({posts}: { posts: any[] }) {
                 </div>
             </section>
 
-            <section className="py-24 sm:py-32 container mx-auto px-6 lg:px-12" id={'description'}>
+            <section className="py-24 sm:py-32 container mx-auto px-6 lg:px-12 max-w-screen-2xl" id={'description'}>
                 <div className="grid sm:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className={'mb-4'}>{t('h-1')}</h2>
@@ -104,8 +104,8 @@ export default function HomeClient({posts}: { posts: any[] }) {
             </section>
 
             {/* Services Section */}
-            <section id="services" className="py-24 sm:py-32 bg-zinc-950">
-                <div className="container mx-auto px-6 lg:px-12">
+            <section id="services" className="py-24 sm:py-32 max-w-screen-2xl mx-auto px-6 lg:px-12">
+                <div className="container mx-auto">
                     <h2 className="mb-6">Services</h2>
 
                     <div className="relative aspect-[21/9] rounded-xl overflow-hidden mb-12">

@@ -19,6 +19,13 @@
       "country": "Deutschland"
     }
   },
+  "cookie": {
+    "title": "Cookie-Einstellungen",
+    "message": "Wir verwenden Cookies, um den Website-Traffic zu analysieren und Ihr Erlebnis zu verbessern. Durch Ihre Zustimmung willigen Sie in die Verwendung von Cookies zu Analysezwecken ein.",
+    "more": "Mehr erfahren",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  },
   "home": {
     "hero-title": "Drohnen-Videografie im Allgäu",
     "h-1": "Kinematografische Drohnenaufnahmen, die Ihre Geschichte erheben",
@@ -102,5 +109,33 @@
     "disclaimer-p-2": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
     "disclaimer-h-3": "Urheberrecht",
     "disclaimer-p-3": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "last-updated": "Zuletzt aktualisiert: 7. Dezember 2025",
+    "h-1": "1. Unsere Verpflichtung zum Datenschutz",
+    "p-1": "Wir, Fpvelix, setzen uns für den Schutz der Privatsphäre unserer Nutzer ein. Diese Richtlinie beschreibt unsere Praktiken in Bezug auf die Verarbeitung von Daten, die über unseren Service gesammelt werden, wobei wir uns insbesondere auf die Verwendung von anonymen Analysen konzentrieren.",
+    "h-2": "2. Daten, die wir NICHT sammeln (Keine personenbezogenen Daten)",
+    "p-2": "Unser Dienst ist auf einen minimalen Dateneingang ausgelegt. **Wir sammeln, verarbeiten oder speichern keine personenbezogenen Daten**, die Sie direkt oder indirekt identifizieren können, wie Namen, E-Mail-Adressen, Zahlungsinformationen oder eindeutige Kennungen, die mit Ihrer Identität verknüpft sind.",
+    "h-3": "3. Anonyme Datenerhebung (Google Analytics)",
+    "p-3": "Wir sammeln nicht-personenbezogene, anonyme Daten ausschließlich zu dem Zweck, das Nutzerverhalten zu verstehen und unsere Serviceleistung zu verbessern.",
+    "h-3-a": "A. Erhobene Daten",
+    "p-3-a": "Wir verwenden Google Analytics, um statistische Daten zu sammeln, die aggregiert und anonymisiert werden. Dazu gehören Informationen wie Gerätetyp, Browserinformationen, aufgerufene Seiten, Verweildauer auf Seiten und Navigationspfade. Diese Daten können nicht auf einen einzelnen Nutzer zurückgeführt werden.",
+    "h-3-b": "B. Rechtsgrundlage und Einwilligung (EU/DSGVO)",
+    "li-3-b-1": "**Rechtsgrundlage:** Da unsere Hauptnutzer in der Europäischen Union ansässig sind, ist die Rechtsgrundlage für die Verarbeitung dieser anonymen Daten die **Einwilligung des Nutzers**, wie sie in der DSGVO und der ePrivacy-Richtlinie (Cookie-Gesetz) vorgeschrieben ist.",
+    "li-3-b-2": "**Einwilligungsmechanismus:** Wir aktivieren das Google Analytics-Tracking erst, **nachdem Sie über unser Cookie-Banner oder unser Einwilligungstool vor Ort Ihre ausdrückliche Erlaubnis erteilt haben**.",
+    "h-4": "4. Datenaustausch und Dritte",
+    "p-4": "Wir **teilen oder verkaufen** die von uns gesammelten minimalen anonymen Daten nicht mit Dritten für Marketing- oder kommerzielle Zwecke. Der einzige an der Verarbeitung beteiligte Dritte ist **Google LLC** (Google Analytics), der als unser Auftragsverarbeiter fungiert und so konfiguriert ist, dass eine maximale Datenanonymisierung gewährleistet ist (IP-Anonymisierung ist aktiviert).",
+    "h-5": "5. Cookies und Tracking-Technologien",
+    "p-5": "Wir verwenden Cookies, das sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+    "li-5-1": "**Funktionale/Notwendige Cookies:** Diese sind für den grundlegenden Betrieb des Dienstes unerlässlich und erfordern nicht Ihre Zustimmung.",
+    "li-5-2": "**Analytische Cookies:** Hierbei handelt es sich um nicht-essenzielle Cookies (die für Google Analytics verwendet werden), die **erst nach Erhalt Ihrer ausdrücklichen Erlaubnis** über unser Consent-Management-Tool eingesetzt werden.",
+    "h-5-control": "Ihr Recht auf Kontrolle von Cookies",
+    "p-5-control": "Sie haben das Recht, Ihre Einwilligung zur Verwendung von Analyse-Cookies jederzeit über Ihre Browsereinstellungen oder durch das Zurücksetzen aller Cookie-Einstellungen zu widerrufen:",
+    "manage-cookies": "Cookie-Einstellungen entfernen",
+    "h-6": "6. Kontaktieren Sie uns",
+    "p-6": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:",
+    "email-label": "E-Mail:",
+    "address-label": "Adresse:"
   }
 }

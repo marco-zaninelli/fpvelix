@@ -11,13 +11,20 @@
     "phone": "(+49) 0461 858 465",
     "copyright": "©2025 All rights reserver / Built by ",
     "name": "Felix Stech",
-    "address":{
+    "address": {
       "street": "Grünbaumgasse 13",
       "postalCode": "87435",
       "city": "Kempten",
       "state": "Allgäu",
       "country": "Germany"
     }
+  },
+  "cookie": {
+    "title": "Cookie Settings",
+    "message": "We use cookies to analyze website traffic and improve your experience. By accepting, you consent to our use of cookies for analytics purposes.",
+    "more": "Learn more",
+    "accept": "accept",
+    "decline": "decline"
   },
   "home": {
     "hero-title": "Drone Videography in Allgäu",
@@ -102,5 +109,33 @@
     "disclaimer-p-2": "Our site contains links to external third-party websites, the content of which we have no influence over. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
     "disclaimer-h-3": "Copyright",
     "disclaimer-p-3": "The content and works created by the site operator on these pages are subject to German copyright law. The duplication, processing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last-updated": "Last Updated: December 7, 2025",
+    "h-1": "1. Our Commitment to Privacy",
+    "p-1": "We, Fpvelix, are committed to protecting the privacy of our users. This policy outlines our practices concerning the processing of data collected through our service, particularly focusing on our use of anonymous analytics.",
+    "h-2": "2. Data We Do NOT Collect (No Personal Data)",
+    "p-2": "Our service is designed to operate with minimal data intake. **We do not collect, process, or store any personal data** that can directly or indirectly identify you, such as names, email addresses, payment information, or unique identifiers tied to your identity.",
+    "h-3": "3. Anonymous Data Collection (Google Analytics)",
+    "p-3": "We collect non-personal, anonymous data solely for the purpose of understanding user behavior and improving our service performance.",
+    "h-3-a": "A. Data Collected",
+    "p-3-a": "We use Google Analytics to gather statistical data, which is aggregated and anonymized. This includes information like device type, browser information, pages viewed, time spent on pages, and navigation paths. This data cannot be traced back to an individual user.",
+    "h-3-b": "B. Legal Basis and Consent (EU/GDPR)",
+    "li-3-b-1": "**Legal Basis:** Since our primary users are in the European Union, the legal basis for processing this anonymous data is **user consent**, as mandated by the GDPR and the ePrivacy Directive (Cookie Law).",
+    "li-3-b-2": "**Consent Mechanism:** We only activate Google Analytics tracking **after you provide explicit permission** through our on-site cookie banner or consent tool.",
+    "h-4": "4. Data Sharing and Third Parties",
+    "p-4": "We **do not share or sell** the minimal anonymous data we collect with any third parties for marketing or commercial purposes. The only third party involved in processing is **Google LLC** (Google Analytics), which acts as our data processor, configured to ensure maximum data anonymization (IP anonymization is enabled).",
+    "h-5": "5. Cookies and Tracking Technologies",
+    "p-5": "We use cookies, which are small text files placed on your device.",
+    "li-5-1": "**Functional/Necessary Cookies:** These are essential for the basic operation of the service and do not require your consent.",
+    "li-5-2": "**Analytical Cookies:** These are non-essential cookies (used for Google Analytics) and are **only deployed after we receive your explicit permission** via our consent management tool.",
+    "h-5-control": "Your Right to Control Cookies",
+    "p-5-control": "You have the right to withdraw your consent to the use of analytical cookies at any time via your browser settings or by resetting all cookie settings:",
+    "manage-cookies": "Remove Cookie Preferences",
+    "h-6": "6. Contact Us",
+    "p-6": "If you have any questions about this Privacy Policy, please contact us at:",
+    "email-label": "Email:",
+    "address-label": "Address:"
   }
 }
