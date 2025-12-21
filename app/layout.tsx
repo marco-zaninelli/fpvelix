@@ -11,22 +11,25 @@ const jura = Jura({
     display: 'swap',
 });
 
-export default async function RootLayout({
-                                             children,
-                                             params: { locale }
-                                         }: {
+// Define the type to match Next.js 15+ requirements
+type Props = {
     children: React.ReactNode;
-    params: { locale: string };
-}) {
-    // Fetch translations on the server side
+    params: Promise<{ locale: string }>;
+};
+
+export default async function RootLayout(props: Props) {
+    // 1. Await the params to get the locale
+    const params = await props.params;
+    const locale = params.locale || "de";
+
+    // 2. Fetch translations on the server side
     const messages = await getMessages();
 
     return (
-        <html lang={locale || "de"}>
+        <html lang={locale}>
         <body className={jura.className}>
-        {/* Wrap the application in the provider so Client Components can access translations */}
-        <NextIntlClientProvider messages={messages}>
-            <LayoutContent>{children}</LayoutContent>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+            <LayoutContent>{props.children}</LayoutContent>
             <CookieBanner />
         </NextIntlClientProvider>
         </body>
