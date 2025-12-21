@@ -1,3 +1,4 @@
+// app/layout.tsx
 import './globals.css';
 import {Jura} from 'next/font/google';
 import React from 'react';
@@ -11,36 +12,30 @@ const jura = Jura({
     display: 'swap',
 });
 
-// Define the type to match Next.js 15+ requirements
+// Use an optional property for locale to satisfy Next.js internal types
 type Props = {
     children: React.ReactNode;
-    params: Promise<{ locale: string }>;
+    params: Promise<{ locale?: string }>; // Made locale optional
 };
 
 export default async function RootLayout(props: Props) {
-    // 1. Await the params to get the locale
+    // 1. Await the params
     const params = await props.params;
+
+    // 2. Fallback to 'de' if locale is not provided
     const locale = params.locale || "de";
 
-    // 2. Fetch translations on the server side
+    // 3. Fetch translations
     const messages = await getMessages();
 
     return (
         <html lang={locale}>
         <body className={jura.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
-            <LayoutContent>{props.children}</LayoutContent>
+            {props.children}
             <CookieBanner />
         </NextIntlClientProvider>
         </body>
         </html>
-    );
-}
-
-function LayoutContent({children}: { children: React.ReactNode }) {
-    return (
-        <>
-            {children}
-        </>
     );
 }
