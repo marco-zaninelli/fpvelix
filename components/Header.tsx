@@ -13,7 +13,7 @@ import CloseIcon from "@/public/icons/close-icon.svg"
 const PagesLinks = [
     { key: "projects", href: "/projects",},
     { key: "drones", href: "/drones",},
-    { key: "contact", href: "/#footer",}
+    { key: "contact", href: "#footer",}
 ];
 
 
@@ -96,9 +96,9 @@ export default function Header() {
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}
             >
-                <div className="flex flex-col h-full p-10 pt-32 text-3xl font-bold text-white">
+                <div className="flex flex-col h-full p-10 pt-32 text-3xl font-bold text-white justify-between">
                     <nav>
-                        <ul className="flex flex-col items-center space-y-8 lowercase">
+                        <ul className="flex flex-col items-center space-y-8 lowercase mt-20">
                             {PagesLinks.map((item) => (
                                 <li key={item.key}>
                                     <Link
@@ -112,7 +112,7 @@ export default function Header() {
                         </ul>
                     </nav>
 
-                    <div className="mt-12 flex justify-center">
+                    <div className="mb-20 flex justify-center">
                         <LanguageSwitcher/>
                     </div>
                 </div>

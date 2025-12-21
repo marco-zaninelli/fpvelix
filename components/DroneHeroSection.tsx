@@ -41,7 +41,7 @@ export const DroneHeroSection: React.FC<DroneHeroSectionProps> = ({data}) => {
     const sectionClasses = `relative overflow-hidden py-24 px-6`;
 
     const flexClasses = `flex flex-col items-center gap-16 ${
-        isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'
+        isReversed ? 'md:flex-row-reverse' : 'md:flex-row'
     }`;
 
     return (
@@ -49,14 +49,14 @@ export const DroneHeroSection: React.FC<DroneHeroSectionProps> = ({data}) => {
             <div className="container mx-auto max-w-7xl">
                 <div className={flexClasses}>
                     {/* Image */}
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full md:w-1/2">
                         <div className="relative">
                             <Image src={imageSrc} alt={imageAlt} className="w-full"/>
                         </div>
                     </div>
 
                     {/* Details */}
-                    <div className="w-full lg:w-1/2 space-y-8">
+                    <div className="w-full md:w-1/2 space-y-8">
                         <h2 className="mb-6">{name}</h2>
                         <p className='mb-8'>{description}</p>
 

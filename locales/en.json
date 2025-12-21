@@ -43,6 +43,9 @@
     "service-h-4": "Custom Drone Components",
     "service-p-4": "Tailor-made drone setups designed to deliver the perfect shot every time."
   },
+  "projects": {
+    "hero-title": "Video portfolio"
+  },
   "drones": {
     "title": "My Fleet",
     "description": "Specialized drones engineered for different filming scenarios. Each optimized for specific use cases and environments.",

@@ -43,6 +43,9 @@
     "service-h-4": "Individuelle Drohnenkomponenten",
     "service-p-4": "Maßgeschneiderte Drohnen-Setups, die jedes Mal die perfekte Aufnahme liefern."
   },
+  "projects": {
+    "hero-title": "Video portfolio"
+  },
   "drones": {
     "title": "Meine Flotte",
     "description": "Spezialisierte Drohnen, die für verschiedene Filmszenarien entwickelt wurden. Jede ist optimiert für spezifische Anwendungsfälle und Umgebungen.",

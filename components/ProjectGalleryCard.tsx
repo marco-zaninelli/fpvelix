@@ -8,7 +8,7 @@ interface ProjectGalleryCardProps {
 
 export function ProjectGalleryCard({src, alt, title}: ProjectGalleryCardProps) {
     return (
-        <div className="relative aspect-[9/16] overflow-hidden rounded-xl">
+        <div className="relative aspect-[2/3] overflow-hidden rounded-xl">
             <Image
                 src={src}
                 alt={alt}

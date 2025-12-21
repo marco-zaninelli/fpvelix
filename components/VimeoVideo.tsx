@@ -8,11 +8,11 @@ import { Play, Loader2 } from 'lucide-react';
  * Maps the specified aspect ratio strings (2.39/1, 9/16, 16/9)
  * to their corresponding Tailwind aspect-ratio utility classes.
  */
-type AspectRatioKey = '2.39/1' | '9/16' | '16/9';
+type AspectRatioKey = '2.39/1' | '2/3' | '16/9';
 
 const aspectRatioMap: Record<AspectRatioKey, string> = {
     '2.39/1': 'aspect-[239/100]',
-    '9/16': 'aspect-[9/16]',
+    '2/3': 'aspect-[2/3]',
     '16/9': 'aspect-video',
 };
 
