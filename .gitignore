@@ -4,11 +4,12 @@
 /node_modules
 /.pnp
 .pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+
+# yarn section removed as you are using npm
+
+/.idea
+/.sanity
+/dist
 
 # testing
 /coverage
